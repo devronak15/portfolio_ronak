@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronak Devani</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Ronak_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Node.js Developer</p>
+                <h1>Hi, I'm <span>Ronak</span><br>Devani From Surat</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile-pic.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>To acquire a responsible and challenging position in a progressive
+                        organization where I can get ample opportunities to learn & enrich my
+                        competencies and utilize the best of my skill for the company's growth.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Tools')">Tools & Technology</p>
+                        <p class="tab-links" onclick="opentab('Training')">Training</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Tools">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>Postman</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Training">
+                        <ul>
+                            <li><span>Node JS Back End Course</span><br>ABCoding IT Institute , Surat</li>
+                            <li> - Understanding Developer Tools And Setup Node Js Environment</li>
+                            <li> - Understanding Event Emitter & REPL and CMD</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July 2024 - DEc 2024</span><br>Bolstersys LLP </li>
+                            <li>BACKEND DEVELOPER </li>
+                            <li> - Worked on backend development using Node.js and Express.js.</li>
+                            <li> - Gained experience in building APIs and managing databases.</li>
+                            <li> - Learned to optimize code and collaborate in team projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2025</span><br>B.C.A. (Bachelors's in Computer Application)</li>
+                            <p> • Saurashtra University, Rajkot - Gujarat (CGPA- 7.042)</p>
+                            <li><span>2020 - 2022</span><br>H.S.C (Higher Secondary Education Board)</li>
+                            <p> • Shree Kalapi Vinay Mandir - Lathi Gujarat (Percentage - 60.57%)</p>
+                            <li><span>2018 – 2020</span><br>S.S.C (Secondary Education Board)</li>
+                            <p> • Sardar Patel Secondary School – Damnagar Gujarat(Percentage - 67.16%)</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Application Development</h2>
+                    <p>Build scalable backend applications with Express.js, NestJS, or Fastify.</p>
+                    <p>RESTful and GraphQL API development.</p>
+                    <p>Real-time apps using Socket.IO or WebSockets.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>API Integration & Development</h2>
+                    <p>Third-party API integrations (Stripe, PayPal, Twilio).</p>
+
+                    <p>Build internal or public APIs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-wrench"></i>
+                    <h2>Authentication & Security </h2>
+                    <p>JWT, OAuth2, Session Auth </p>
+
+                    <p>Validation & Rate Limiting</p>
+
+                    <p> API Security Best Practices</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you yo the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you yo the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> ronakdevani15@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 9913829015</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Ronak_CV-2.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © ronak. Made wtih <i class="fas fa-heart"></i>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = '< add you own link here >' // add your own app script link here
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
